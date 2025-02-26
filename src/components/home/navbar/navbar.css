@@ -1,0 +1,153 @@
+.navbar {
+  background-color: #222831;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.btn {
+  display: flex;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 25px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b0bec5;
+}
+
+.proceed-btn {
+  border: 1px solid #b0bec5;
+  background: transparent;
+  color: white;
+  width: 97px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background: #00adb5;
+}
+
+.register-btn {
+  background: #00adb5;
+  color: white;
+  border-radius: 4px;
+  width: 135px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #008c94;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links{
+    gap: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  .nav-links {
+    gap: 10px;
+    padding: 15px 0;
+  }
+  .btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .proceed-btn, .register-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo img {
+    height: 20px;
+  }
+  .brand-name {
+    font-size: 14px;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #222831;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

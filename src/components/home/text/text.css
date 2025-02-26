@@ -1,0 +1,50 @@
+.text p {
+    color: #00ADB5;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.text h1 {
+    font-size: 50px;
+    color: #818181;
+    width: 900px;
+}
+
+.text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    .text h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .text h1 {
+        font-size: 32px;
+    }
+    
+    .text p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 24px;
+    }
+    
+    .text p {
+        font-size: 20px;
+    }
+    
+    .text-content {
+        margin-top: 100px;
+    }
+}

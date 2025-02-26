@@ -1,0 +1,44 @@
+.tecnalogy {
+    background-color: #222831;
+    padding: 90px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -4px;   
+}
+
+.tecnalogy-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 1450px;
+}
+
+.tecnalogy-img1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.tecnalogy-img1 img {
+    max-width: 49%;
+    height: auto;
+    object-fit: cover;
+    width: 805px;
+}
+
+@media (max-width: 1040px){
+    .tecnalogy-img img{
+        width: 700px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .tecnalogy-img1 img {
+        max-width: 90%;
+    }
+}

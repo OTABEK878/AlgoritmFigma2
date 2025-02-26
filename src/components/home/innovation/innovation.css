@@ -1,0 +1,83 @@
+.innovation {
+  padding: 50px 20px;
+  background-color: #1b1d23;
+  color: white;
+  padding-top: 200px;
+}
+
+.innovation-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.innovation-image img {
+  width: 100%;
+  height: 400px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+.innovation-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.innovation-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.innovation-text p {
+  font-size: 16px;
+  color: #b0b3b8;
+  margin: 10px 0;
+  padding-top: 20px;
+}
+
+.discover-btn {
+  background-color: #008A90;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 180px;
+  height: 50px;
+}
+
+.discover-btn:hover {
+  background-color: #008b7e;
+}
+
+.innovation-grid {
+  display: flex;
+  justify-content: center;
+  gap: 190px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.innovation-item {
+  max-width: 350px;
+}
+
+.icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .innovation-content {
+    flex-direction: column;
+  }
+  .innovation-grid{
+    justify-content: start;
+  }
+}
