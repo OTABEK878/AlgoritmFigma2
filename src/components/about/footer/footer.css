@@ -1,0 +1,71 @@
+.footer-about {
+  background-color: #1e1f26;
+  color: white;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-left-about {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-left-about img{
+    margin-bottom: 35px;
+}
+
+.footer-title-about {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.highlight-about {
+  color: white;
+}
+
+.heart-icon-about {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.footer-text-about {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.footer-links-about {
+  display: flex;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.footer-links-about a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links-about a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .footer-about {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-links-about{
+    flex-wrap: wrap;
+  }
+  .footer-about{
+    height: auto;
+  }
+  
+}

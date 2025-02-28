@@ -13,6 +13,7 @@ import AboutText from "./components/about/text/text"
 import AboutServices from "./components/about/services/services"
 import AboutCard from "./components/about/card/card"
 import AboutTeam from "./components/about/team/team"
+import AboutFooter from "./components/about/footer/footer"
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -30,6 +31,7 @@ const App = () => {
         <AboutServices />
         <AboutCard />
         <AboutTeam />
+        <AboutFooter />
       </>
     ) : (
       <>
