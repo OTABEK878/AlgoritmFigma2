@@ -13,6 +13,11 @@ const Navbar = ({ setShowOnlyAbout }) => {
     navigate("/");
   };
 
+  // "Perspective" tugmasini bosganda Assesment sahifasiga o'tish
+  const handlePerspectiveClick = () => {
+    navigate("/assesment");
+  };
+
   // Logoni bosganda Home sahifasiga qaytish
   const handleLogoClick = () => {
     setShowOnlyAbout(false);
@@ -31,7 +36,7 @@ const Navbar = ({ setShowOnlyAbout }) => {
       
       <div className={menuOpen ? "nav-links active" : "nav-links"}>
         <a href="#" onClick={handleBeginClick}>Begin</a>
-        <a href="#">Perspective</a>
+        <a href="#" onClick={handlePerspectiveClick}>Perspective</a>
         <a href="#">Inventors</a>
         <div className="btn">
           <button className="proceed-btn">Proceed</button>

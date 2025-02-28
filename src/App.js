@@ -14,6 +14,7 @@ import AboutServices from "./components/about/services/services"
 import AboutCard from "./components/about/card/card"
 import AboutTeam from "./components/about/team/team"
 import AboutFooter from "./components/about/footer/footer"
+import AssesmentHome from "./components/assesment/home/home"
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -21,32 +22,34 @@ const App = () => {
     <Router>
       <Navbar setShowOnlyAbout={setShowOnlyAbout} />
       <Routes>
-      <Route
-  path="/"
-  element={
-    showOnlyAbout ? (
-      <>
-        <AboutHome />
-        <AboutText />
-        <AboutServices />
-        <AboutCard />
-        <AboutTeam />
-        <AboutFooter />
-      </>
-    ) : (
-      <>
-        <Home />
-        <Tecnalogy />
-        <Text />
-        <Directions />
-        <Meet />
-        <Innovation />
-        <Footer />
-      </>
-    )
-  }
-/>
-      </Routes>
+  <Route
+    path="/"
+    element={
+      showOnlyAbout ? (
+        <>
+          <AboutHome />
+          <AboutText />
+          <AboutServices />
+          <AboutCard />
+          <AboutTeam />
+          <AboutFooter />
+        </>
+      ) : (
+        <>
+          <Home />
+          <Tecnalogy />
+          <Text />
+          <Directions />
+          <Meet />
+          <Innovation />
+          <Footer />
+        </>
+      )
+    }
+  />
+  <Route path="/assesment" element={<AssesmentHome />} /> 
+</Routes>
+
     </Router>
   );
 };
