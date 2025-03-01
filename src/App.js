@@ -17,6 +17,7 @@ import AboutFooter from "./components/about/footer/footer";
 import AssesmentHome from "./components/assesment/home/home";
 import AssesmentAbout from "./components/assesment/about/about";
 import AssesmentCard from "./components/assesment/cards/card";
+import AssementEngage from "./components/assesment/engage/engage"
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -56,6 +57,7 @@ const App = () => {
               <AssesmentHome />
               <AssesmentAbout />
               <AssesmentCard />
+              <AssementEngage />
             </>
           }
         />

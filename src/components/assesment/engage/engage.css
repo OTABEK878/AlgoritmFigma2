@@ -1,0 +1,53 @@
+.engage{
+    background-color: #1f2937;
+    padding-top: 100px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.engage-img1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.engage-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.engage-img2{
+    margin-top: 35px;
+}
+
+.engage-text h1{
+    font-size: 50px;
+}
+
+.engage-text{
+    margin: 0 auto;
+}
+
+@media (max-width: 925px) {
+    .engage-img{
+        flex-direction: column;
+    }
+    .engage-img1 img{
+        height: 200px;
+        width: 320px;
+    }
+    .engage-img2 img{
+        width: 320px;
+    }
+}
+
+@media (max-width: 615px) {
+    .engage{
+        flex-direction: column;
+    }
+}
