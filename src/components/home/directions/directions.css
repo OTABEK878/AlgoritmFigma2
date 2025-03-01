@@ -1,7 +1,7 @@
 .directions {
   text-align: center;
   padding: 50px 20px;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .directions-title {
@@ -35,6 +35,7 @@
 .direction-item img {
   width: 32px;
   height: 32px;
+  padding-top: 21px;
 }
 
 .direction-item h3 {

@@ -4,22 +4,22 @@ import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-left">
+    <footer className="footer-assessment">
+      <div className="footer-container-assessment">
+        <div className="footer-left-assessment">
             <img src="./img/Icon.png" alt="" />
-          <p className="footer-brand">TechInnov</p>
+          <p className="footer-brand-assessment">TechInnov</p>
         </div>
-        <div className="footer-link">
-        <div className="footer-links">
+        <div className="footer-link-assessment">
+        <div className="footer-links-assessment">
           <a href="">Begin</a>
           <a href="">Perspective</a>
           <a href="">Inventors</a>
         </div>
-        <p className="footer-rights">All rights reserved 2024</p>
+        <p className="footer-rights-assessment">All rights reserved 2024</p>
         </div>
 
-        <div className="footer-social">
+        <div className="footer-social-assessment">
           <FaTwitter />
           <FaInstagram />
           <FaLinkedin />
