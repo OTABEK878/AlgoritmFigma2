@@ -9,12 +9,14 @@ import Text from "./components/home/text/text";
 import Directions from "./components/home/directions/directions";
 import Meet from "./components/home/meet/meet";
 import Innovation from "./components/home/innovation/innovation";
-import AboutText from "./components/about/text/text"
-import AboutServices from "./components/about/services/services"
-import AboutCard from "./components/about/card/card"
-import AboutTeam from "./components/about/team/team"
-import AboutFooter from "./components/about/footer/footer"
-import AssesmentHome from "./components/assesment/home/home"
+import AboutText from "./components/about/text/text";
+import AboutServices from "./components/about/services/services";
+import AboutCard from "./components/about/card/card";
+import AboutTeam from "./components/about/team/team";
+import AboutFooter from "./components/about/footer/footer";
+import AssesmentHome from "./components/assesment/home/home";
+import AssesmentAbout from "./components/assesment/about/about";
+import AssesmentCard from "./components/assesment/cards/card";
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -22,34 +24,42 @@ const App = () => {
     <Router>
       <Navbar setShowOnlyAbout={setShowOnlyAbout} />
       <Routes>
-  <Route
-    path="/"
-    element={
-      showOnlyAbout ? (
-        <>
-          <AboutHome />
-          <AboutText />
-          <AboutServices />
-          <AboutCard />
-          <AboutTeam />
-          <AboutFooter />
-        </>
-      ) : (
-        <>
-          <Home />
-          <Tecnalogy />
-          <Text />
-          <Directions />
-          <Meet />
-          <Innovation />
-          <Footer />
-        </>
-      )
-    }
-  />
-  <Route path="/assesment" element={<AssesmentHome />} /> 
-</Routes>
-
+        <Route
+          path="/"
+          element={
+            showOnlyAbout ? (
+              <>
+                <AboutHome />
+                <AboutText />
+                <AboutServices />
+                <AboutCard />
+                <AboutTeam />
+                <AboutFooter />
+              </>
+            ) : (
+              <>
+                <Home />
+                <Tecnalogy />
+                <Text />
+                <Directions />
+                <Meet />
+                <Innovation />
+                <Footer />
+              </>
+            )
+          }
+        />
+        <Route
+          path="/assesment"
+          element={
+            <>
+              <AssesmentHome />
+              <AssesmentAbout />
+              <AssesmentCard />
+            </>
+          }
+        />
+      </Routes>
     </Router>
   );
 };

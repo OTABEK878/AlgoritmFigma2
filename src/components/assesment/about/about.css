@@ -1,0 +1,96 @@
+.about-container {
+  width: 100%;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  background-color: #1f2937;
+  color: white;
+  padding: 60px 20px;
+}
+
+.vision-title {
+  color: #0d9488;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.vision-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 800px;
+}
+
+@media (max-width: 768px) {
+  .vision-heading {
+    font-size: 2rem;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.integration-content {
+  display: flex;
+  justify-content: center;
+}
+
+.integration-section {
+  background-color: #374151;
+  color: white;
+  padding: 50px 20px;
+}
+
+.integration-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.integration-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.integration-card {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .integration-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .integration-card {
+    max-width: 90%;
+  }
+}
+
+.integration-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.integration-card p {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

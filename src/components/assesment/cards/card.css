@@ -1,0 +1,62 @@
+.dashboard {
+  background-color: #1f2937;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.refresh-icon {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #2d3748;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* O‘rta ekranda 2 ta */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Telefon uchun 1 ta */
+  }
+}
