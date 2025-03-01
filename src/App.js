@@ -19,7 +19,10 @@ import AssesmentAbout from "./components/assesment/about/about";
 import AssesmentCard from "./components/assesment/cards/card";
 import AssementEngage from "./components/assesment/engage/engage";
 import AssenmentEducation from "./components/assesment/education/education";
-import AssementFooter from "./components/assesment/footer/footer"
+import AssementFooter from "./components/assesment/footer/footer";
+import InterfaceHome from "./components/interface/home/home";
+import InterfaceAbout from "./components/interface/about/about";
+
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -62,6 +65,15 @@ const App = () => {
               <AssementEngage />
               <AssenmentEducation />
               <AssementFooter />
+            </>
+          }
+        />
+        <Route
+          path="/interface"
+          element={
+            <>
+              <InterfaceHome />
+              <InterfaceAbout />
             </>
           }
         />
