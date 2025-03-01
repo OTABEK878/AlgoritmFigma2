@@ -7,23 +7,19 @@ const Navbar = ({ setShowOnlyAbout }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  // "Begin" tugmasi bosilganda faqat AboutHome sahifasini ko'rsatish
   const handleBeginClick = () => {
     setShowOnlyAbout(true);
     navigate("/");
   };
 
-  // "Perspective" tugmasini bosganda Assesment sahifasiga o'tish
   const handlePerspectiveClick = () => {
     navigate("/assesment");
   };
 
-  // "Inventors" tugmasini bosganda Interface sahifasiga o'tish
   const handleInventorsClick = () => {
     navigate("/interface");
   };
 
-  // Logoni bosganda Home sahifasiga qaytish
   const handleLogoClick = () => {
     setShowOnlyAbout(false);
     navigate("/");
