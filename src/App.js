@@ -17,7 +17,9 @@ import AboutFooter from "./components/about/footer/footer";
 import AssesmentHome from "./components/assesment/home/home";
 import AssesmentAbout from "./components/assesment/about/about";
 import AssesmentCard from "./components/assesment/cards/card";
-import AssementEngage from "./components/assesment/engage/engage"
+import AssementEngage from "./components/assesment/engage/engage";
+import AssenmentEducation from "./components/assesment/education/education";
+import AssementFooter from "./components/assesment/footer/footer"
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -58,6 +60,8 @@ const App = () => {
               <AssesmentAbout />
               <AssesmentCard />
               <AssementEngage />
+              <AssenmentEducation />
+              <AssementFooter />
             </>
           }
         />
