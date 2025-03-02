@@ -3,13 +3,19 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <img src="./img/Image  --lummi (5).png" alt="Assessment" className="home-image" />
-      <h1 className="home-title">Assessment Reimagined</h1>
-      <p className="home-subtitle">
+    <div className="assessment-home-container">
+      <img
+        src="./img/Image  --lummi (5).png"
+        alt="Assessment"
+        className="assessment-home-image"
+      />
+      <h1 className="assessment-home-title">Assessment Reimagined</h1>
+      <p className="assessment-home-subtitle">
         Transition from paper to digital effortlessly.
       </p>
-      <button className="home-button">Discover the Platform</button>
+      <button className="assessment-home-button">
+        Discover the Platform
+      </button>
     </div>
   );
 };
