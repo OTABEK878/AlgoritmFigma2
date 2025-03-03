@@ -1,0 +1,51 @@
+.client{
+  background-color: #1f2937;
+  padding: 1px;
+  color: white;
+  padding-top: 200px;
+}
+
+.client-text h1{
+    font-size: 60px;
+    padding-left: 80px;
+}
+
+.client-content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.client-box{
+    background-color: #393E46;
+    width: 600px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.client-txt p{
+    font-size: 15px;
+    width: 300px;
+}
+
+.client-img p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 1075px){
+    .client-box{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .client-content{
+        flex-direction: column;
+    }
+    .client-box{
+        width: 100%;
+    }
+}

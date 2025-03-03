@@ -22,7 +22,7 @@ import AssenmentEducation from "./components/assesment/education/education";
 import AssementFooter from "./components/assesment/footer/footer";
 import InterfaceHome from "./components/interface/home/home";
 import InterfaceAbout from "./components/interface/about/about";
-
+import InterfaceClient from "./components/interface/client/client"
 const App = () => {
   const [showOnlyAbout, setShowOnlyAbout] = useState(false);
 
@@ -74,6 +74,7 @@ const App = () => {
             <>
               <InterfaceHome />
               <InterfaceAbout />
+              <InterfaceClient />
             </>
           }
         />
